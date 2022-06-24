@@ -13,7 +13,10 @@ export default function App() {
       </main>
       <footer className='App-footer'>
         <small>
-        Coded by Yi
+        Coded by {" "}
+        <a href='https://github.com/YiYiYiYiYiYiYiYiYiYiYi/dictionary-project' target={"_blank"} rel="noreferrer">
+        Yi
+        </a>
         </small>
       </footer>
       </div>
