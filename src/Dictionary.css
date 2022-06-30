@@ -18,3 +18,9 @@
     font-size: 11px;
     margin-top: 5px;
 }
+
+.Dictionary h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
