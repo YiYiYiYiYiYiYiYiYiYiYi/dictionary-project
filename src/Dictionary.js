@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results";
+import Photos from "./Photos";
 
 export default function Dictionary(){
     let [keyword, setKeyword] = useState("");
     let [results, setResults] = useState(null);
+    let [photos, setPhotos] = useState(null);
 
 
     function handleResponse(response){
@@ -13,6 +15,7 @@ export default function Dictionary(){
     }
 
     function handlePexelsResponse(response){
+        setPhotos(response.data.photos)
 
     }
 
@@ -44,6 +47,7 @@ export default function Dictionary(){
             </div>
             </section>
             <Results results={results}/>
+            <Photos photos={photos} />
         </div>
     );
 }
